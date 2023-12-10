@@ -1,0 +1,214 @@
+/*Baseplate de css para todos os livros da featuredBooks*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+}
+
+section nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #2596be;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 8px;
+    right: 207px;
+    align-self: center;
+    position: relative;
+}
+
+section nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section nav li a{
+    color: black;
+    text-decoration: none;
+
+}
+
+section nav li a:hover{
+    color: #2596be ;
+}
+
+section .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 180px;
+    text-align: center;
+}
+section .main h1{
+    font-size: 55px;
+}
+
+section .main p{
+    width: 650px;
+    text-align: justify;
+    line-height: 22px;
+    
+}
+/*Secção que contém a imagem e as informações do livro*/
+#bookInfo{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+#bookInfo img{
+    width: 500px;
+    margin: 20px;
+    border-radius: 8px;
+}
+/*Secção com as informações em texto do livro*/
+#bookInfo .bookDetails{
+    margin: 20px;
+}
+
+/*Rodapé*/
+footer {
+    background: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.redesSociais {
+    list-style: none;
+    padding: 0;
+}
+
+.redesSociais li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redesSociais li a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.footerBottom {
+    margin-top: 20px;
+    color: gray;
+}
+/*Responsividade para ecrãs menores que 768px*/
+@media (max-width: 768px) {
+    section nav .logo img {
+        width: 10vh;
+    }
+
+    section nav {
+        flex-direction: column;
+        align-items: center;
+        max-height: 50vh;
+        position: relative;
+    }
+
+    section nav li {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    section .main {
+        padding-top: 120px;
+    }
+
+    section .main h1 {
+        font-size: 40px;
+    }
+
+    section .main p {
+        width: 90%;
+       
+    }
+
+    section .main img {
+        max-width: 100%;
+    }
+
+    section .main {
+        padding-top: 120px;
+    }
+
+    section .main .main_txt h1 {
+        font-size: 40px;
+        font-weight: normal;
+    }
+
+    section .main p {
+        width: 90%;
+    }
+
+    #bookInfo {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #bookInfo img {
+        width: 50%;
+        margin: 10px 0; 
+        border-radius: 8px;
+        align-items: flex-start;
+    }
+
+    #bookInfo .bookDetails {
+        margin: 10px 0;
+        padding-right: 100px;
+    }
+
+    #bookSum {
+        margin-top: 10px;
+        margin-left: 20px; 
+    }
+
+    footer .footerContent {
+        text-align: center;
+    }
+
+    footer h3, footer p {
+        margin-bottom: 15px;
+    }
+
+    .redesSociais li {
+        margin-right: 8px;
+    }
+
+}
